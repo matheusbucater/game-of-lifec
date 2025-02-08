@@ -113,7 +113,7 @@ void mouse_to_grid(cell_state cell) {
     pixel_pos = (Vector2){mouse_pos.x / pixel_size, mouse_pos.y / pixel_size};
 
     printf("%d, %d\n", (int)pixel_pos.x, (int)pixel_pos.y);
-    grid[(int)pixel_pos.y][(int)pixel_pos.x] = cell;
+    grid[(int)pixel_pos.x][(int)pixel_pos.y] = cell;
 }
 
 void add_pixel_to_grid(void) {
